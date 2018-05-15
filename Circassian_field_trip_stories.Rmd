@@ -26,7 +26,10 @@ circassian %>%
   cir
 
 df %>% 
-  mutate(wow = if_else(is.na(wow), "", wow)) ->
+  mutate(wow = if_else(is.na(wow), "", wow),
+         sejni = if_else(is.na(sejni), "", sejni),
+         opae = if_else(is.na(opae), "", opae),
+         fesh = if_else(is.na(fesh), "", fesh)) ->
   df
 
 map.feature(language = df$language,
