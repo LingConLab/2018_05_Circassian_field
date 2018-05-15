@@ -123,6 +123,15 @@ map.feature(language = df$language,
 
 ## Элицитация
 
+```{r}
+map.feature(language = df$language,
+            features = df$dialect,
+            label = df$sejni,
+            label.hide = FALSE,
+            longitude = df$longitude,
+            latitude = df$latitude,
+            tile = "Esri.WorldGrayCanvas")
+```
 
 ## Рассказ по картинкам
 ![](pauk.jpg)
