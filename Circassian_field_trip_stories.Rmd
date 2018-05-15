@@ -121,12 +121,36 @@ map.feature(language = df$language,
 
 Не забывай: все нужно делать вовремя”
 
-## Элицитация
+## Элицитация: сравнительная форма личного местоимения
 
 ```{r}
 map.feature(language = df$language,
             features = df$dialect,
             label = df$sejni,
+            label.hide = FALSE,
+            longitude = df$longitude,
+            latitude = df$latitude,
+            tile = "Esri.WorldGrayCanvas")
+```
+
+## Элицитация: индексация актанта бенефактивного послелога
+
+```{r}
+map.feature(language = df$language,
+            features = df$dialect,
+            label = df$opae,
+            label.hide = FALSE,
+            longitude = df$longitude,
+            latitude = df$latitude,
+            tile = "Esri.WorldGrayCanvas")
+```
+
+## Элицитация: бенефактивный послелог фэш1
+
+```{r}
+map.feature(language = df$language,
+            features = df$dialect,
+            label = df$fesh,
             label.hide = FALSE,
             longitude = df$longitude,
             latitude = df$latitude,
