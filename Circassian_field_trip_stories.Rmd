@@ -35,15 +35,7 @@ map.feature(language = df$language,
             label.hide = FALSE,
             longitude = df$longitude,
             latitude = df$latitude,
-            tile = "none") %>% 
-  map.feature(cir$language,
-              longitude = cir$longitude,
-              latitude = cir$latitude,
-              opacity = 0.2,
-              tile = "Esri.WorldGrayCanvas",
-              pipe.data = .,
-              zoom.level = 9,
-              color = "red")
+            tile = "Esri.WorldGrayCanvas")
 ```
 
 ## Зачем мы ездили?
@@ -151,15 +143,7 @@ map.feature(language = df$language,
             label.hide = FALSE,
             longitude = df$longitude,
             latitude = df$latitude,
-            tile = "none") %>% 
-  map.feature(cir$language,
-              longitude = cir$longitude,
-              latitude = cir$latitude,
-              opacity = 0.2,
-              tile = "Esri.WorldGrayCanvas",
-              pipe.data = .,
-              zoom.level = 9,
-              color = "red")
+            tile = "Esri.WorldGrayCanvas")
 ```
 
 ## Что дальше?
